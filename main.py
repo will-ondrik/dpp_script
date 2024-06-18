@@ -6,10 +6,17 @@ import merge_data # Merges new DPP workorders to the master sheet
 # A temporary copy of the master sheet is created in the merge function
     # It will be deleted if the merge is successful
 def main(master_sheet_filepath, raw_dpp_filepath):
+
+    print('Executing script...')
+    print('Processing new DPP data...')
+
     # Extract and format the new DPP data
     formatted_dpp_filepath = format_data.format_workorders(raw_dpp_filepath)
 
+    print('Formatting complete. Merging data...')
+    
     # Merge the formatted DPP data into the master sheet
     merge_data.merge(master_sheet_filepath, formatted_dpp_filepath)
 
+    print('Script execution complete.')
 
