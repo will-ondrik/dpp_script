@@ -2,7 +2,7 @@
 
 ## Installation Steps
 - Create a virtual environment
-    python3 -m venv env OR python -m venv env (depending on your Python version)
+    1) python3 -m venv env OR python -m venv env (depending on your Python version)
 
 - Setup
     1) Navigate to your program directory:     cd dpp_script
